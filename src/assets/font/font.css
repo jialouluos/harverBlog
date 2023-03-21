@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'RaleWay';
+    src: url('@/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Homenaje';
+    src: url('@/assets/font/Homenaje/Homenaje.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'ZhuZiAWan';
+    src: url('@/assets/font/ZhuZiAWan/ZhuZiAWan.ttc') format('truetype');
+}

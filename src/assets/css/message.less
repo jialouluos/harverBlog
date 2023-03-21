@@ -1,0 +1,136 @@
+.msg_container {
+    .remove {
+        animation: up_dispose 0.5s;
+    }
+
+
+    .add {
+        animation: down_add 0.5s;
+    }
+
+    position: fixed;
+    z-index:999999999;
+    width:200px;
+    height:auto;
+
+    bottom: 100px;
+    right:40px;
+
+    .msg {
+
+        user-select: none;
+        margin: 5px 0px;
+        width: 200px;
+        min-height: 40px;
+        height: auto;
+        right: -70px;
+        border-radius: 10px;
+        background-color: rgba(71, 208, 253, 0.548);
+        border-color: #c8d9c9;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: space-evenly;
+
+
+        span {
+            color: #fff;
+            font-size: 14px;
+            padding-left: 20px;
+            min-height: 40px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+
+        button {
+            width: 60px;
+
+            min-width: 40px;
+            border: none;
+            background-color: transparent;
+            color: rgb(12, 73, 97);
+
+            cursor: pointer;
+
+            span {
+                font-size: 16px;
+
+                padding: 0;
+                width: 60px;
+                min-width: 40px;
+            }
+        }
+
+        @keyframes up_dispose {
+            0% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-75px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes down_add {
+            0% {
+                opacity: 0;
+                transform: translateX(40px);
+
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .success {
+        background-color: #348954b3;
+
+        span {
+            color: #faeaea;
+        }
+
+        button {
+            color: rgb(210, 210, 210);
+        }
+    }
+
+    .error {
+        background-color: rgba(96, 33, 33, 0.7);
+
+        span {
+            color: #faeaea;
+        }
+
+        button {
+            color: rgb(210, 210, 210);
+        }
+    }
+
+    .info {
+        background-color: #585858b3;
+
+        span {
+            color: #faeaea;
+        }
+
+        button {
+            color: rgb(210, 210, 210);
+        }
+    }
+
+    .warning {
+        background-color: #3e2160b3;
+
+        span {
+            color: #faeaea;
+        }
+
+        button {
+            color: rgb(210, 210, 210);
+        }
+    }
+}

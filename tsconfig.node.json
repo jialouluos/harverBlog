@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "es2020",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "vite.config.ts",
+    "vite.dev.config.ts",
+    "vite.prod.config.ts",
+    "vite.base.config.ts"
+  ]
+}
