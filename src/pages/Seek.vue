@@ -308,6 +308,7 @@ export default defineComponent({
                         div {
                             display: inline-block;
                             width: 50%;
+
                             .el-tag {
                                 background-color: #f2f2f2;
                                 color: var(--hover_color);
