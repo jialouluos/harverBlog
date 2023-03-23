@@ -37,7 +37,7 @@ window.onbeforeunload = () => {
   sessionStorage.setItem(`itemKeys`, JSON.stringify(Object.keys(rawData)));
 };
 const app = createApp(App);
-app.config.globalProperties.$gsap =gsap;
+app.config.globalProperties.$gsap = gsap
 app
   .use(Store)
   .use(Router)
