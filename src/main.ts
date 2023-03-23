@@ -25,7 +25,6 @@ declare module "@vue/runtime-core" {
     };
   }
 }
-console.log("312312")
 const rawData = toRaw(Store.state.value);
 /**
  * 在刷新页面之前将Store存储的信息放入sessionStorage
