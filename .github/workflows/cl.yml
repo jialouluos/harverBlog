@@ -54,7 +54,7 @@ jobs:
       - name: 打包镜像, 上传 Docker Hub
         run: |
           docker login -u harver326 -p  ASDASDasd123
-          docker build  -t blog:latest  .
+          docker build -f /home/runner/work/harverBlog/Dockerfile -t blog:latest  .
           docker tag blog:latest harver326/blog:latest
           docker push harver326/blog:latest
 
