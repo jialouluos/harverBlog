@@ -1,84 +1,84 @@
-@import '@/assets/css/tween.less';
-@import '@/assets/css/markdown.less';
-@import '@/assets/css/message.less';
-@import '@/assets/css/load.less';
-@import '@/assets/css/code.less';
+@import "@/assets/css/tween.less";
+@import "@/assets/css/markdown.less";
+@import "@/assets/css/message.less";
+@import "@/assets/css/load.less";
+@import "@/assets/css/code.less";
 
 * {
+  u,
+  i {
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+  }
 
-    u,
-    i {
-        text-decoration: none;
-        list-style: none;
-        font-style: normal;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    list-style-type: none;
+  }
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body,
 #app {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg_color);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg_color);
 
+  font-family: "ZhuZiAWan", "Microsoft YaHei", "微软雅黑", "RaleWay",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
 
-    font-family: "ZhuZiAWan", "Microsoft YaHei", '微软雅黑', 'RaleWay', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  position: relative;
 
-    position: relative;
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+  }
 
-    &::-webkit-scrollbar {
-        height: 10px;
-        width: 5px;
-    }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #73c3fc;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: #73c3fc;
-    }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(183, 225, 241, 0.6);
+  }
 
-    &::-webkit-scrollbar-track {
-        border-radius: 10px;
-        background-color: rgba(183, 225, 241, 0.6);
-    }
-
-    ul,
-    li {
-        margin: 0px;
-        padding: 0px;
-        list-style-type: none;
-    }
+  ul,
+  li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
 }
 
 .ic {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 :root {
-    @W: 3.75vw;
-    @0: 0;
-    @reSizeW: (1/@W);
-    @H: 6.67vh;
-    @reSizeH: (1/@H);
-    --W: @W;
-    --0: @0;
-    --reSizeW: @reSizeW;
-    --H: @H;
-    --reSizeH: @reSizeH;
+  @W: 3.75vw;
+  @0: 0;
+  @reSizeW: (1 / @W);
+  @H: 6.67vh;
+  @reSizeH: (1 / @H);
+  --W: @W;
+  --0: @0;
+  --reSizeW: @reSizeW;
+  --H: @H;
+  --reSizeH: @reSizeH;
 }
