@@ -45,13 +45,13 @@ export default defineConfig({
         autoInstall: true,
     }),
     // Inspect(),
-    viteCompression({
-        verbose: true,
-        disable: false,
-        threshold: 10240,
-        algorithm: 'gzip',
-        ext: '.gz',
-    })
+    // viteCompression({
+    //     verbose: true,
+    //     disable: false,
+    //     threshold: 10240,
+    //     algorithm: 'gzip',
+    //     ext: '.gz',
+    // })
     ],
     optimizeDeps: {
         exclude: [],//排除不优化的模块(依赖预构建)
