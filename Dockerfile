@@ -13,5 +13,5 @@ COPY nginx.conf /blog/nginx/nginx.conf
 # ssl
 COPY fullchain.pem /blog/nginx/ssl/fullchain.pem
 COPY privkey.pem /blog/nginx/ssl/privkey.pem
-# 暴露端口
-EXPOSE 80
+# 暴露端口14
+EXPOSE 1141
