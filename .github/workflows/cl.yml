@@ -2,6 +2,8 @@ name: CI
 on:
   pull_request:
     branches: main
+  push:
+    branches: main
 jobs:
   # 只需要定义一个job并命名为CI
   CI:
