@@ -10,8 +10,5 @@ COPY dist/  /harverBlog/nginx/html/
 # RUN rm -rf /etc/nginx/nginx.conf
 # 用本地的nginx配置文件覆盖镜像的Nginx配置
 COPY nginx.conf /etc/nginx/conf.d/harver.conf
-# ssl
-COPY fullchain.pem /harverBlog/nginx/ssl/fullchain.pem
-COPY privkey.pem /harverBlog/nginx/ssl/privkey.pem
 # 暴露端口14
 EXPOSE 1141
