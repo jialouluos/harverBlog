@@ -29,7 +29,6 @@ const rawData = toRaw(Store.state.value);
 /**
  * 在刷新页面之前将Store存储的信息放入sessionStorage
  */
-
 window.onbeforeunload = () => {
   for (let [item, value] of Object.entries(rawData)) {
     sessionStorage.setItem(`${item}Store`, JSON.stringify(value));
