@@ -11,7 +11,7 @@ const envResolver = {
 };
 
 export default defineConfig((Env: ConfigEnv): UserConfig => {
-  console.log("process", process.env.MODE,import.meta.env.MODE);
+  // console.log("process", process.env.MODE,import.meta.env.MODE);
   const { command, mode } = Env;
   const env = loadEnv(mode, process.cwd(), "");
   //客户端 环境变量储存在 import.mate.env中，如果环境变量不是VITE(通过envPrefix可以自定义)开头，就不会注入到vite.config.js中
